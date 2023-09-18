@@ -1,0 +1,44 @@
+architecture: x86_64
+config:
+  image.architecture: amd64
+  image.description: Fedora 38 amd64 (20230910_20:33)
+  image.os: Fedora
+  image.release: "38"
+  image.serial: "20230910_20:33"
+  image.type: squashfs
+  image.variant: default
+  limits.cpu: "4"
+  limits.memory: 8GiB
+  linux.kernel_modules: kvm,kvm-amd,tun,squashfs,8021q,mrp,stp,llc,vhost,fat,tap,veth,ip_tables,ip6_tables,bridge,tap,vfio,vfio_iommu_type1,vfio_pci
+  security.nesting: "true"
+  security.privileged: "true"
+  volatile.base_image: 2199280814edbfe65196971ad446971c7fb4f02fddce93b6c563c7eb9db7caa3
+  volatile.cloud-init.instance-id: c4a8fdf7-e91e-4980-b51e-d56de8866662
+  volatile.eth0.host_name: vetha5b7a796
+  volatile.eth0.hwaddr: 00:16:3e:8b:b9:24
+  volatile.eth1.host_name: veth1eec3956
+  volatile.eth1.hwaddr: 00:16:3e:f1:6d:ee
+  volatile.eth2.host_name: veth12056d3b
+  volatile.eth2.hwaddr: 00:16:3e:0c:28:fc
+  volatile.eth3.host_name: vethab71f9ba
+  volatile.eth3.hwaddr: 00:16:3e:5e:bc:d6
+  volatile.eth4.host_name: veth0b03253a
+  volatile.eth4.hwaddr: 00:16:3e:d5:20:64
+  volatile.idmap.base: "0"
+  volatile.idmap.current: '[]'
+  volatile.idmap.next: '[]'
+  volatile.last_state.idmap: '[]'
+  volatile.last_state.power: RUNNING
+  volatile.last_state.ready: "false"
+  volatile.uuid: 9c5e9e0c-8b6f-4fbe-9051-74547cc9d9a8
+  volatile.uuid.generation: 9c5e9e0c-8b6f-4fbe-9051-74547cc9d9a8
+devices:
+  kvm:
+    path: /dev/kvm
+    type: unix-char
+ephemeral: false
+profiles:
+- default
+- trex
+stateful: false
+description: ""
